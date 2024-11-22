@@ -1,5 +1,5 @@
-width = int(input("Enter rectangle width: "))   
-length = int(input("Enter rectangle length: "))  
+width = float(input("Enter rectangle width: "))   
+length = float(input("Enter rectangle length: "))  
 
 area = width * length
 circumference = (width * 2) + (length * 2)
