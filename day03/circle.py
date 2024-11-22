@@ -1,8 +1,8 @@
-import math
+--import math
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--radius', help='Please enter the circle radius', required=True, type=int)
+parser.add_argument('--radius', help='Enter circle radius', required=True, type=int)
 
 args = parser.parse_args()
 
