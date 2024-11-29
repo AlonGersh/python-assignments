@@ -6,7 +6,7 @@ def main():
     while True:
         play_game()
         if not play_again():
-            print("Goodbye")
+            print("Goodbye!")
             break
 
 
@@ -16,35 +16,45 @@ def play_game():
     print("Guess what is the number between 1 and 20 I chose?")
 
     while True:
-        guess = int(input("The number is: (type 'x' to exit, 'n' for a new game, 's' to show the number)"))
+        guess = input("The number is: (type 'x' to exit, 'n' for a new game, 's' to show the number) ").strip().lower()
 
         if guess == "x":
-            print("Goodbye")
+            print("Goodbye!")
+            exit(0)  
         elif guess == "n":
-            print("Lets play again")
+            print("Let's play again!")
             return 
-        elif guess == 's':
-            print(f"The number is: {random_number_number}")
+        elif guess == "s":
+            print(f"The number is: {random_number}")
+            continue 
+
+        if not guess.isdigit():
+            print("Invalid input! Please enter a number between 1 and 20.")
             continue
 
+        guess = int(guess)
         attempts += 1
 
         if guess == random_number:
-            print(f"Correct! Your number of attempts is: {attempts}")
+            print(f"Correct! You guessed in {attempts} attempts.")
             break
-        elif guess > secret_number:
-            print("Try a smaller number")
+        elif guess > random_number:
+            print("Try a smaller number.")
         else:
-            print("Try a bigger number")
+            print("Try a bigger number.")
+
 
 def play_again():
+    """Ask the user if they want to play again."""
     while True:
-        response = input("Do you want to play again?").strip().lower()
-        if response == "yes":
+        response = input("Do you want to play again? (yes/no): ").strip().lower()
+        if response == 'yes':
             return True
-        elif response == "no":
+        elif response == 'no':
             return False
-  
+        else:
+            print("Invalid input. Please type 'yes' or 'no'.")
 
 
-
+if __name__ == "__main__":
+    main()
