@@ -45,7 +45,6 @@ def play_game():
 
 
 def play_again():
-    """Ask the user if they want to play again."""
     while True:
         response = input("Do you want to play again? (yes/no): ").strip().lower()
         if response == 'yes':
