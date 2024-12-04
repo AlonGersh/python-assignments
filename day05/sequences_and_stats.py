@@ -1,68 +1,59 @@
 import sys
-from collections import Counter
 
-def compute_stats(sequence):
+def calculate_statistics(sequence):
     """
-    Compute the nucleotide statistics for a given sequence.
+    Calculate statistics for a given sequence.
     """
-    stats = Counter()
-    total = 0
-
-    for char in sequence:
-        if char.upper() in "ACGT":
-            stats[char.upper()] += 1
-        else:
-            stats["Unknown"] += 1
-        total += 1
-
-    return stats, total
-
-def format_stats(stats, total):
-    """
-    Format the statistics for display.
-    """
-    output = []
-    for base in "ACGT":
-        count = stats[base]
-        percentage = (count / total * 100) if total else 0
-        output.append(f"{base}: {count:8d} {percentage:5.1f}%")
+    counts = {"A": 0, "C": 0, "G": 0, "T": 0, "Unknown": 0}
+    total = len(sequence)
     
-    unknown = stats["Unknown"]
-    unknown_percentage = (unknown / total * 100) if total else 0
-    output.append(f"Unknown: {unknown:5d} {unknown_percentage:5.1f}%")
-    output.append(f"Total: {total:8d}")
-    return "\n".join(output)
+    for char in sequence:
+        if char in counts:
+            counts[char] += 1
+        else:
+            counts["Unknown"] += 1
 
-def process_file(file_path):
-    """
-    Process a single file to compute and display statistics.
-    """
-    with open(file_path, 'r') as file:
-        sequence = file.read().replace("\n", "")
-    stats, total = compute_stats(sequence)
-    print(f"{file_path}")
-    print(format_stats(stats, total))
-    print()
+    stats = {key: (counts[key], counts[key] / total * 100 if total > 0 else 0) for key in counts}
     return stats, total
+
+def print_statistics(stats, total, label):
+    """
+    Print statistics for a single file or all files.
+    """
+    print(f"{label}")
+    for key, (count, percentage) in stats.items():
+        print(f"{key}: {count:>8} {percentage:6.1f}%")
+    print(f"Total: {total:>6}")
+    print()
 
 def main():
-    if len(sys.argv) < 3:
+    if len(sys.argv) != 3:
         print("Usage: python seq.py <file1> <file2>")
-        sys.exit(1)
+        return
+    
+    all_counts = {"A": 0, "C": 0, "G": 0, "T": 0, "Unknown": 0}
+    total_all = 0
 
-    file1, file2 = sys.argv[1], sys.argv[2]
-
-    # Process each file
-    stats1, total1 = process_file(file1)
-    stats2, total2 = process_file(file2)
-
-    # Combine statistics
-    combined_stats = stats1 + stats2
-    combined_total = total1 + total2
-
-    # Display combined statistics
-    print("All")
-    print(format_stats(combined_stats, combined_total))
+    for file_path in sys.argv[1:]:
+        try:
+            with open(file_path, "r") as file:
+                sequence = file.read().strip()
+                stats, total = calculate_statistics(sequence)
+                print_statistics(stats, total, file_path)
+                
+                for key in all_counts:
+                    all_counts[key] += stats[key][0]
+                total_all += total
+        except FileNotFoundError:
+            print(f"File not found: {file_path}")
+            return
+        except Exception as e:
+            print(f"An error occurred while processing {file_path}: {e}")
+            return
+    
+    if total_all > 0:
+        all_stats = {key: (all_counts[key], all_counts[key] / total_all * 100) for key in all_counts}
+        print_statistics(all_stats, total_all, "All")
 
 if __name__ == "__main__":
     main()
