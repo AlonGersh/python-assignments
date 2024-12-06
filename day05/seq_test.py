@@ -1,7 +1,6 @@
 from seq import calculate_statistics
 
 def test_statistics_a_seq():
-    # Read the content of a_seq.txt
     with open("a_seq.txt", "r") as file:
         sequence = file.read()
 
@@ -14,18 +13,15 @@ def test_statistics_a_seq():
     }
     expected_total = 27
 
-    # Calculate statistics
     stats, total = calculate_statistics(sequence)
 
-    # Compare only the counts (first element of the tuple)
     for key in expected_results:
-        assert stats[key][0] == expected_results[key]  # Only check counts (integers)
+        assert stats[key][0] == expected_results[key]  
 
     assert total == expected_total
 
 
 def test_statistics_b_seq():
-    # Read the content of b_seq.txt
     with open("b_seq.txt", "r") as file:
         sequence = file.read()
 
@@ -38,11 +34,9 @@ def test_statistics_b_seq():
     }
     expected_total = 11
 
-    # Calculate statistics
     stats, total = calculate_statistics(sequence)
 
-    # Compare only the counts (first element of the tuple)
     for key in expected_results:
-        assert stats[key][0] == expected_results[key]  # Only check counts (integers)
+        assert stats[key][0] == expected_results[key]  
     
     assert total == expected_total
