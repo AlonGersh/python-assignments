@@ -1,9 +1,6 @@
 import sys
 
 def calculate_statistics(sequence):
-    """
-    Calculate statistics for a given sequence.
-    """
     counts = {"A": 0, "C": 0, "G": 0, "T": 0, "Unknown": 0}
     total = len(sequence)
     
@@ -17,9 +14,6 @@ def calculate_statistics(sequence):
     return stats, total
 
 def print_statistics(stats, total, label):
-    """
-    Print statistics for a single file or all files.
-    """
     print(f"{label}")
     for key, (count, percentage) in stats.items():
         print(f"{key}: {count:>8} {percentage:6.1f}%")
