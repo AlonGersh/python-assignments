@@ -35,7 +35,6 @@ def log_to_csv(log_file, date, term, database, max_records, total_found):
         writer.writerow([date, database, term, max_records, total_found])
 
 def main():
-    try:
         parser = argparse.ArgumentParser(description="Download data from NCBI.")
         parser.add_argument("--database", type=str, default="nucleotide", help="NCBI database to query (default: nucleotide)")
         parser.add_argument("--term", type=str, required=True, help="Search term")
