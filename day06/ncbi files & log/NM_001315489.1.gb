@@ -1,0 +1,295 @@
+LOCUS       NM_001315489            1541 bp    mRNA    linear   ROD 08-DEC-2024
+DEFINITION  Mus musculus insulin-like growth factor 2 (Igf2), transcript
+            variant 5, mRNA.
+ACCESSION   NM_001315489
+VERSION     NM_001315489.1
+KEYWORDS    RefSeq.
+SOURCE      Mus musculus (house mouse)
+  ORGANISM  Mus musculus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha;
+            Muroidea; Muridae; Murinae; Mus; Mus.
+REFERENCE   1  (bases 1 to 1541)
+  AUTHORS   Sandovici,I., Fernandez-Twinn,D.S., Campbell,N., Cooper,W.N.,
+            Sekita,Y., Zvetkova,I., Ferland-McCollough,D., Prosser,H.M.,
+            Oyama,L.M., Pantaleao,L.C., Cimadomo,D., Barbosa de Queiroz,K.,
+            Cheuk,C.S.K., Smith,N.M., Kay,R.G., Antrobus,R., Hoelle,K.,
+            Ma,M.K.L., Smith,N.H., Geyer,S.H., Reissig,L.F., Weninger,W.J.,
+            Siddle,K., Willis,A.E., Lam,B.Y.H., Bushell,M., Ozanne,S.E. and
+            Constancia,M.
+  TITLE     Overexpression of Igf2-derived Mir483 inhibits Igf1 expression and
+            leads to developmental growth restriction and metabolic dysfunction
+            in mice
+  JOURNAL   Cell Rep 43 (9), 114750 (2024)
+   PUBMED   39283743
+REFERENCE   2  (bases 1 to 1541)
+  AUTHORS   Sandovici,I., Knee,O., Lopez-Tello,J., Shreeve,N., Fowden,A.L.,
+            Sferruzzi-Perri,A.N. and Constancia,M.
+  TITLE     A genetically small fetus impairs placental adaptations near term
+  JOURNAL   Dis Model Mech 17 (8) (2024)
+   PUBMED   39207227
+REFERENCE   3  (bases 1 to 1541)
+  AUTHORS   Flaherty,S.E. 3rd, Bezy,O., Paulhus,B.L., Song,L., Piper,M.,
+            Pang,J., Park,Y., Asano,S., Lien,Y.C., Griffin,J.D., Robertson,A.,
+            Opsahl,A., Shanthappa,D.H., Ahn,Y., Pashos,E., Simmons,R.A.,
+            Birnbaum,M.J. and Wu,Z.
+  TITLE     SPAG7 deletion causes intrauterine growth restriction, resulting in
+            adulthood obesity and metabolic dysfunction
+  JOURNAL   Elife 12, 91114 (2024)
+   PUBMED   39056292
+  REMARK    Publication Status: Online-Only
+REFERENCE   4  (bases 1 to 1541)
+  AUTHORS   Matsuzaki,H., Kimura,M., Morihashi,M. and Tanimoto,K.
+  TITLE     Imprinted DNA methylation of the H19 ICR is established and
+            maintained in vivo in the absence of Kaiso
+  JOURNAL   Epigenetics Chromatin 17 (1), 20 (2024)
+   PUBMED   38840164
+  REMARK    Publication Status: Online-Only
+REFERENCE   5  (bases 1 to 1541)
+  AUTHORS   Wang,T., Tang,Y., Xia,Y., Zhang,Q., Cao,S., Bie,M. and Kang,F.
+  TITLE     IGF2 promotes alveolar bone regeneration in murine periodontitis
+            via inhibiting cGAS/STING-mediated M1 macrophage polarization
+  JOURNAL   Int Immunopharmacol 132, 111984 (2024)
+   PUBMED   38565043
+  REMARK    GeneRIF: IGF2 promotes alveolar bone regeneration in murine
+            periodontitis via inhibiting cGAS/STING-mediated M1 macrophage
+            polarization.
+REFERENCE   6  (bases 1 to 1541)
+  AUTHORS   Ferguson,M.W., Sharpe,P.M., Thomas,B.L. and Beck,F.
+  TITLE     Differential expression of insulin-like growth factors I and II
+            (IGF I and II), mRNA, peptide and binding protein 1 during mouse
+            palate development: comparison with TGF beta peptide distribution
+  JOURNAL   J Anat 181 (Pt 2) (Pt 2), 219-238 (1992)
+   PUBMED   1284245
+REFERENCE   7  (bases 1 to 1541)
+  AUTHORS   Zemel,S., Bartolomei,M.S. and Tilghman,S.M.
+  TITLE     Physical linkage of two mammalian imprinted genes, H19 and
+            insulin-like growth factor 2
+  JOURNAL   Nat Genet 2 (1), 61-65 (1992)
+   PUBMED   1303252
+REFERENCE   8  (bases 1 to 1541)
+  AUTHORS   Rappolee,D.A., Sturm,K.S., Behrendtsen,O., Schultz,G.A.,
+            Pedersen,R.A. and Werb,Z.
+  TITLE     Insulin-like growth factor II acts through an endogenous growth
+            pathway regulated by imprinting in early mouse embryos
+  JOURNAL   Genes Dev 6 (6), 939-952 (1992)
+   PUBMED   1317321
+REFERENCE   9  (bases 1 to 1541)
+  AUTHORS   Hannon,K., Smith,C.K. 2nd, Bales,K.R. and Santerre,R.F.
+  TITLE     Temporal and quantitative analysis of myogenic regulatory and
+            growth factor gene expression in the developing mouse embryo
+  JOURNAL   Dev Biol 151 (1), 137-144 (1992)
+   PUBMED   1374351
+REFERENCE   10 (bases 1 to 1541)
+  AUTHORS   Brown,E.J., Hsiao,D. and Rosenthal,S.M.
+  TITLE     Induction and peak gene expression of insulin-like growth factor II
+            follow that of myogenin during differentiation of BC3H-1 muscle
+            cells
+  JOURNAL   Biochem Biophys Res Commun 183 (3), 1084-1089 (1992)
+   PUBMED   1314574
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AC013548.13 and BC053489.1.
+            
+            Summary: This gene encodes a member of the insulin-like growth
+            factor (IGF) family of proteins that promote growth and development
+            during fetal and postnatal life. It is an imprinted gene that is
+            expressed only from the paternal allele. The encoded protein
+            undergoes proteolytic processing to generate a mature peptide. The
+            transgenic overexpression of this gene in mice results in prenatal
+            overgrowth, polyhydramnios, fetal and neonatal lethality,
+            disproportionate organ overgrowth including tongue enlargement, and
+            skeletal abnormalities. Mice lacking the encoded protein exhibit
+            growth deficiency. Alternative splicing results in multiple
+            transcript variants encoding different isoforms that may undergo
+            similar processing to generate mature protein. [provided by RefSeq,
+            Oct 2015].
+            
+            Transcript Variant: This variant (5) uses an alternate exon at its
+            5' terminus, lacks a portion of the 3' UTR and uses a downstream
+            in-frame start codon, compared to variant 1. This results in a
+            protein (isoform 2) with a shorter N-terminus, compared to isoform
+            1. Variants 2, 3, 4 and 5 encode the same protein.
+            
+            Sequence Note: This RefSeq record was created from transcript and
+            genomic sequence data to make the sequence consistent with the
+            reference genome assembly. The genomic coordinates used for the
+            transcript record were based on transcript alignments.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: BC053489.1 [ECO:0000332]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            imprinted gene :: PMID: 14645508
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-29                AC013548.13        57926-57954
+            30-683              BC053489.1         1-654
+            684-684             AC013548.13        61632-61632
+            685-890             BC053489.1         656-861
+            891-891             AC013548.13        64004-64004
+            892-1474            BC053489.1         863-1445
+            1475-1475           AC013548.13        64588-64588
+            1476-1541           BC053489.1         1447-1512
+FEATURES             Location/Qualifiers
+     source          1..1541
+                     /organism="Mus musculus"
+                     /mol_type="mRNA"
+                     /strain="C57BL/6"
+                     /db_xref="taxon:10090"
+                     /chromosome="7"
+                     /map="7 87.99 cM"
+     gene            1..1541
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="insulin-like growth factor 2"
+                     /db_xref="GeneID:16002"
+                     /db_xref="MGI:MGI:96434"
+     exon            1..109
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    41..43
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="upstream in-frame stop codon"
+     exon            110..272
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             116..658
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="isoform 2 preproprotein is encoded by transcript
+                     variant 5; insulin-like growth factor II;
+                     multiplication-stimulating polypeptide"
+                     /codon_start=1
+                     /product="insulin-like growth factor 2 isoform 2
+                     preproprotein"
+                     /protein_id="NP_001302418.1"
+                     /db_xref="CCDS:CCDS52458.1"
+                     /db_xref="GeneID:16002"
+                     /db_xref="MGI:MGI:96434"
+                     /translation="MGIPVGKSMLVLLISLAFALCCIAAYGPGETLCGGELVDTLQFV
+                     CSDRGFYFSRPSSRANRRSRGIVEECCFRSCDLALLETYCATPAKSERDVSTSQAVLP
+                     DDFPRYPVGKFFQYDTWRQSAGRLRRGLPALLRARRGRMLAKELKEFREAKRHRPLIV
+                     LPPKDPAHGGASSEMSSNHQ"
+     sig_peptide     116..187
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1)"
+     mat_peptide     188..388
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /product="Insulin-like growth factor 2.
+                     /id=PRO_0000015720"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1)"
+     misc_feature    188..271
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1);
+                     Region: B"
+     misc_feature    257..259
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="Important for interaction with integrin.
+                     /evidence=ECO:0000250|UniProtKB:P01344; propagated from
+                     UniProtKB/Swiss-Prot (P09535.1); other site"
+     misc_feature    272..307
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1);
+                     Region: C"
+     misc_feature    287..289
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="Important for interaction with integrin.
+                     /evidence=ECO:0000250|UniProtKB:P01344; propagated from
+                     UniProtKB/Swiss-Prot (P09535.1); other site"
+     misc_feature    296..298
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="Important for interaction with integrin.
+                     /evidence=ECO:0000250|UniProtKB:P01344; propagated from
+                     UniProtKB/Swiss-Prot (P09535.1); other site"
+     misc_feature    299..301
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="Important for interaction with integrin.
+                     /evidence=ECO:0000250|UniProtKB:P01344; propagated from
+                     UniProtKB/Swiss-Prot (P09535.1); other site"
+     misc_feature    308..370
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1);
+                     Region: A"
+     misc_feature    371..388
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1);
+                     Region: D"
+     mat_peptide     392..493
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /product="Preptin. /id=PRO_0000370377"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1)"
+     misc_feature    584..655
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P09535.1);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     exon            273..421
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            422..684
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            685..1541
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      1521..1526
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="hexamer: AATAAA"
+     polyA_site      1541
+                     /gene="Igf2"
+                     /gene_synonym="Igf-2; Igf-II; M6pr; Mpr; Peg2"
+                     /note="major polyA site"
+ORIGIN      
+        1 ggcactgacc agttcgcaaa ctggacatta gcttctcctg tgagaacctt ccagcctttt
+       61 cctgtcttca tcctcttcca gccccagcgg cctccttacc caacttcagg taccaatggg
+      121 gatcccagtg gggaagtcga tgttggtgct tctcatctct ttggccttcg ccttgtgctg
+      181 catcgctgct tacggccccg gagagactct gtgcggaggg gagcttgttg acacgcttca
+      241 gtttgtctgt tcggaccgcg gcttctactt cagcaggcct tcaagccgtg ccaaccgtcg
+      301 cagccgtggc atcgtggaag agtgctgctt ccgcagctgc gacctggccc tcctggagac
+      361 atactgtgcc acccccgcca agtccgagag ggacgtgtct acctctcagg ccgtacttcc
+      421 ggacgacttc cccagatacc ccgtgggcaa gttcttccaa tatgacacct ggagacagtc
+      481 cgcgggacgc ctgcgcagag gcctgcctgc cctcctgcgt gcccgccggg gtcgcatgct
+      541 tgccaaagag ctcaaagagt tcagagaggc caaacgtcat cgtcccctga tcgtgttacc
+      601 acccaaagac cccgcccacg ggggagcctc ttcggagatg tccagcaacc atcagtgaat
+      661 caaattatgt ggtaattctg caatgtgggg tgaggcccgg agttggggaa gctaggaggc
+      721 ttaaagccta cagagccagg agaactgtat acacggggtc atctgggccc tggggcctga
+      781 gggtctggcg agccgtagca gccactccac ggtgcctagg actgcggcgg ggaacagggc
+      841 ggctggaggt ttacctcacc cccacttctg cttccagtgc agtccccctg cccaacagtc
+      901 caactagcaa tctagaggcc tgaggcttct gggcccaggt gacaggactg gcaccaccct
+      961 gggggcggtg tgtgtcagcc aagcatggca cagagggtcc ctcagcaagt gcctaaagaa
+     1021 tgggccattt ggaacattgg acagaaactc aaagagtaaa ttgttataat tggagactat
+     1081 gaattggcct ggtatccaaa acatctcgag gcaccctaaa ttacctgccc atttggctgg
+     1141 acacccaccc agtgttaata tgcctcgtgg gatgggtgct ttcaggggca tttgctgacc
+     1201 accctctgtg tccccacatt tgcagttctc cccatcatag gtcaccttga tgcaggcacc
+     1261 tccctggcct cctatgccta gtgtggccct ccatcttgtc tcttccctac tgtcttcagt
+     1321 gggatcccct cttgggtccc tccctttgtc atcatgtgaa gacttcccac gcgtcgaacg
+     1381 ccatatgtca cctgtgccac tgtccatgtc atccagcagt ggccccaggt gtttgcctca
+     1441 actcagtccc tctaacatgc attttctggc aaaatccaaa gcttgggttt tgtttttaac
+     1501 ctgttaacgc tcgcaaacct aataaagcat ttaaaatact a
+//
+

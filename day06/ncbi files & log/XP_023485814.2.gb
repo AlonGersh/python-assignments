@@ -1,0 +1,71 @@
+LOCUS       XP_023485814             918 aa            linear   MAM 11-DEC-2024
+DEFINITION  PAX3- and PAX7-binding protein 1 [Equus caballus].
+ACCESSION   XP_023485814
+VERSION     XP_023485814.2
+DBLINK      BioProject: PRJNA1194615
+DBSOURCE    REFSEQ: accession XM_023630046.2
+KEYWORDS    RefSeq.
+SOURCE      Equus caballus (horse)
+  ORGANISM  Equus caballus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Equidae; Equus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_091709) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Dec 11, 2024 this sequence version replaced XP_023485814.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI RefSeq
+            Annotation Status           :: Full annotation
+            Annotation Name             :: GCF_041296265.1-RS_2024_12
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 10.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon;
+                                           cmsearch; tRNAscan-SE
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            Annotation Date             :: 12/06/2024
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..918
+                     /organism="Equus caballus"
+                     /isolate="H_3958"
+                     /db_xref="taxon:9796"
+                     /chromosome="26"
+                     /sex="female"
+                     /tissue_type="Whole blood in anticoagulant"
+                     /dev_stage="adult"
+                     /geo_loc_name="USA: Ithaca, New York"
+                     /collection_date="2018-03-01"
+                     /breed="thoroughbred"
+     Protein         1..918
+                     /product="PAX3- and PAX7-binding protein 1"
+                     /calculated_mol_wt=104777
+     CDS             1..918
+                     /gene="PAXBP1"
+                     /coded_by="XM_023630046.2:119..2875"
+                     /db_xref="GeneID:100063627"
+                     /db_xref="VGNC:VGNC:21179"
+ORIGIN      
+        1 mfrkarrvnv rkrndseeee rerdeeqepp pllpppgtge epgpggggdr apggesllgp
+       61 glpppsaltp gpgaeaggcf pggaepgngl kprkrprenk evprasllsf qdeeeeneev
+      121 fkvkkssysk kivkllkkey kedlekskik telnssadne psldktghvk dtsqedgvii
+      181 sehgedemdm esekeeekpk aggafsnals slnvlrpgei pdaafihaar kkrqmarelg
+      241 dftphdsepg kgrlvreden dasddeddde krrivfsvke ksqrqkiaee igiegsddda
+      301 lvtgeqdeel srweqeqirk ginipqvqas qptevnmyyq ntyqtmpygs sygipysyta
+      361 ygssdaksqk tdntvpfktp snemtpvtid lvkkqlkdrl dsmkelhktn rqqhekhlqs
+      421 rvdstraier legssggige rykflqemrg yvqdllecfs ekvplinele saihqlykqr
+      481 asrlvqrrqd dikdessefs shsnkalmap nldsfgrdra lyqehakrri aerearrtrr
+      541 rqareqtgkm adhleglssd deetstditn fnlekdrisk esskvfedvl esfysidcik
+      601 sqfeawrsky ymsykdayig lclpklfnpl irlqlltwtp leakcrdfet mlwfesllfy
+      661 gceereqekd dvdvallpti vekvilpklt viaenmwdpf sttqtsrmvg itlklingyp
+      721 svvnaenknt qvylkalllr mrrtldddvf mplypknvle nknsgpylff qrqfwssvkl
+      781 lgnflqwygi fsnktlqels idgllnryil mafqnseygd dsikkaqnvi ncfpkqwfmn
+      841 lkgertisql enfcrylvhl adtiyrnsig csdvekrnar enikqivkll asvraldham
+      901 svasdhnvke fksliegk
+//
+

@@ -1,0 +1,394 @@
+LOCUS       NM_001008274            8402 bp    mRNA    linear   PRI 08-DEC-2024
+DEFINITION  Homo sapiens tripartite motif containing 72 (TRIM72), mRNA.
+ACCESSION   NM_001008274
+VERSION     NM_001008274.4
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 8402)
+  AUTHORS   Jia,H., Zhou,L.C., Chen,Y.F., Zhang,W., Qi,W., Wang,P., Huang,X.,
+            Guo,J.W., Hou,W.F., Zhang,R.R., Zhou,J.J. and Zhang,D.W.
+  TITLE     Mitochondria-encoded peptide MOTS-c participates in plasma membrane
+            repair by facilitating the translocation of TRIM72 to membrane
+  JOURNAL   Theranostics 14 (13), 5001-5021 (2024)
+   PUBMED   39267782
+  REMARK    GeneRIF: Mitochondria-encoded peptide MOTS-c participates in plasma
+            membrane repair by facilitating the translocation of TRIM72 to
+            membrane.
+            Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 8402)
+  AUTHORS   Zhu,X.Z., Wang,J.Q. and Wu,Y.H.
+  TITLE     MG53 ameliorates nerve injury induced neuropathic pain through the
+            regulation of Nrf2/HO-1 signaling in rats
+  JOURNAL   Behav Brain Res 449, 114489 (2023)
+   PUBMED   37169128
+  REMARK    GeneRIF: MG53 ameliorates nerve injury induced neuropathic pain
+            through the regulation of Nrf2/HO-1 signaling in rats.
+REFERENCE   3  (bases 1 to 8402)
+  AUTHORS   Cai,M., Gao,X. and Yu,S.
+  TITLE     Tripartite motif 72 inhibits apoptosis and mitochondrial
+            dysfunction in neural stem cells induced by anesthetic sevoflurane
+            by activating PI3K/AKT pathway
+  JOURNAL   Chin J Physiol 66 (1), 36-42 (2023)
+   PUBMED   36814155
+  REMARK    GeneRIF: Tripartite motif 72 inhibits apoptosis and mitochondrial
+            dysfunction in neural stem cells induced by anesthetic sevoflurane
+            by activating PI3K/AKT pathway.
+REFERENCE   4  (bases 1 to 8402)
+  AUTHORS   Niu,Y., Chen,G., Lv,F., Xiao,R.P., Hu,X. and Chen,L.
+  TITLE     Cryo-EM structure of human MG53 homodimer
+  JOURNAL   Biochem J 479 (17), 1909-1916 (2022)
+   PUBMED   36053137
+  REMARK    GeneRIF: Cryo-EM structure of human MG53 homodimer.
+REFERENCE   5  (bases 1 to 8402)
+  AUTHORS   Cui,K.M., Hu,Z.P. and Wang,Y.L.
+  TITLE     MG53 represses high glucose-induced inflammation and angiogenesis
+            in human retinal endothelial cells by repressing the EGR1/STAT3
+            axis
+  JOURNAL   Immunopharmacol Immunotoxicol 44 (4), 484-491 (2022)
+   PUBMED   35438597
+  REMARK    GeneRIF: MG53 represses high glucose-induced inflammation and
+            angiogenesis in human retinal endothelial cells by repressing the
+            EGR1/STAT3 axis.
+REFERENCE   6  (bases 1 to 8402)
+  AUTHORS   Zhu,H., Lin,P., De,G., Choi,K.H., Takeshima,H., Weisleder,N. and
+            Ma,J.
+  TITLE     Polymerase transcriptase release factor (PTRF) anchors MG53 protein
+            to cell injury site for initiation of membrane repair
+  JOURNAL   J Biol Chem 286 (15), 12820-12824 (2011)
+   PUBMED   21343302
+  REMARK    GeneRIF: membrane-delimited interaction between MG53 and PTRF
+            contributes to initiation of cell membrane repair
+REFERENCE   7  (bases 1 to 8402)
+  AUTHORS   Jung,S.Y. and Ko,Y.G.
+  TITLE     TRIM72, a novel negative feedback regulator of myogenesis, is
+            transcriptionally activated by the synergism of MyoD (or myogenin)
+            and MEF2
+  JOURNAL   Biochem Biophys Res Commun 396 (2), 238-245 (2010)
+   PUBMED   20399744
+REFERENCE   8  (bases 1 to 8402)
+  AUTHORS   Park,E.Y., Kwon,O.B., Jeong,B.C., Yi,J.S., Lee,C.S., Ko,Y.G. and
+            Song,H.K.
+  TITLE     Crystal structure of PRY-SPRY domain of human TRIM72
+  JOURNAL   Proteins 78 (3), 790-795 (2010)
+   PUBMED   19967786
+  REMARK    GeneRIF: Crystal structure of PRY-SPRY domain of human TRIM72.
+REFERENCE   9  (bases 1 to 8402)
+  AUTHORS   Han,S., Kim-Howard,X., Deshmukh,H., Kamatani,Y., Viswanathan,P.,
+            Guthridge,J.M., Thomas,K., Kaufman,K.M., Ojwang,J.,
+            Rojas-Villarraga,A., Baca,V., Orozco,L., Rhodes,B., Choi,C.B.,
+            Gregersen,P.K., Merrill,J.T., James,J.A., Gaffney,P.M., Moser,K.L.,
+            Jacob,C.O., Kimberly,R.P., Harley,J.B., Bae,S.C., Anaya,J.M.,
+            Alarcon-Riquelme,M.E., Matsuda,K., Vyse,T.J. and Nath,S.K.
+  TITLE     Evaluation of imputation-based association in and around the
+            integrin-alpha-M (ITGAM) gene and replication of robust association
+            between a non-synonymous functional variant within ITGAM and
+            systemic lupus erythematosus (SLE)
+  JOURNAL   Hum Mol Genet 18 (6), 1171-1180 (2009)
+   PUBMED   19129174
+  REMARK    GeneRIF: Observational study and meta-analysis of gene-disease
+            association. (HuGE Navigator)
+REFERENCE   10 (bases 1 to 8402)
+  AUTHORS   Martin,J., Han,C., Gordon,L.A., Terry,A., Prabhakar,S., She,X.,
+            Xie,G., Hellsten,U., Chan,Y.M., Altherr,M., Couronne,O., Aerts,A.,
+            Bajorek,E., Black,S., Blumer,H., Branscomb,E., Brown,N.C.,
+            Bruno,W.J., Buckingham,J.M., Callen,D.F., Campbell,C.S.,
+            Campbell,M.L., Campbell,E.W., Caoile,C., Challacombe,J.F.,
+            Chasteen,L.A., Chertkov,O., Chi,H.C., Christensen,M., Clark,L.M.,
+            Cohn,J.D., Denys,M., Detter,J.C., Dickson,M.,
+            Dimitrijevic-Bussod,M., Escobar,J., Fawcett,J.J., Flowers,D.,
+            Fotopulos,D., Glavina,T., Gomez,M., Gonzales,E., Goodstein,D.,
+            Goodwin,L.A., Grady,D.L., Grigoriev,I., Groza,M., Hammon,N.,
+            Hawkins,T., Haydu,L., Hildebrand,C.E., Huang,W., Israni,S.,
+            Jett,J., Jewett,P.B., Kadner,K., Kimball,H., Kobayashi,A.,
+            Krawczyk,M.C., Leyba,T., Longmire,J.L., Lopez,F., Lou,Y., Lowry,S.,
+            Ludeman,T., Manohar,C.F., Mark,G.A., McMurray,K.L., Meincke,L.J.,
+            Morgan,J., Moyzis,R.K., Mundt,M.O., Munk,A.C., Nandkeshwar,R.D.,
+            Pitluck,S., Pollard,M., Predki,P., Parson-Quintana,B., Ramirez,L.,
+            Rash,S., Retterer,J., Ricke,D.O., Robinson,D.L., Rodriguez,A.,
+            Salamov,A., Saunders,E.H., Scott,D., Shough,T., Stallings,R.L.,
+            Stalvey,M., Sutherland,R.D., Tapia,R., Tesmer,J.G., Thayer,N.,
+            Thompson,L.S., Tice,H., Torney,D.C., Tran-Gyamfi,M., Tsai,M.,
+            Ulanovsky,L.E., Ustaszewska,A., Vo,N., White,P.S., Williams,A.L.,
+            Wills,P.L., Wu,J.R., Wu,K., Yang,J., Dejong,P., Bruce,D.,
+            Doggett,N.A., Deaven,L., Schmutz,J., Grimwood,J., Richardson,P.,
+            Rokhsar,D.S., Eichler,E.E., Gilna,P., Lucas,S.M., Myers,R.M.,
+            Rubin,E.M. and Pennacchio,L.A.
+  TITLE     The sequence and analysis of duplication-rich human chromosome 16
+  JOURNAL   Nature 432 (7020), 988-994 (2004)
+   PUBMED   15616553
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AK131485.1, AC009088.9 and DA058421.1.
+            
+            On Nov 23, 2018 this sequence version replaced NM_001008274.3.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AK131485.1, DRR138518.499365.1
+                                           [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA2158800, SAMEA2162946
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match     :: ENST00000322122.8/ ENSP00000312675.3
+            RefSeq Select criteria :: based on single protein-coding transcript
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: full length.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-623               AK131485.1         44-666
+            624-624             AC009088.9         102057-102057
+            625-760             DA058421.1         168-303
+            761-2054            AK131485.1         804-2097
+            2055-8402           AC009088.9         108105-114452
+FEATURES             Location/Qualifiers
+     source          1..8402
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="16"
+                     /map="16p11.2"
+     gene            1..8402
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="tripartite motif containing 72"
+                     /db_xref="GeneID:493829"
+                     /db_xref="HGNC:HGNC:32671"
+                     /db_xref="MIM:613288"
+     exon            1..179
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    160..162
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="upstream in-frame stop codon"
+     exon            180..576
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             187..1620
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /EC_number="2.3.2.27"
+                     /note="mitsugumin-53; tripartite motif containing 72, E3
+                     ubiquitin protein ligase"
+                     /codon_start=1
+                     /product="tripartite motif-containing protein 72"
+                     /protein_id="NP_001008275.2"
+                     /db_xref="CCDS:CCDS32437.1"
+                     /db_xref="GeneID:493829"
+                     /db_xref="HGNC:HGNC:32671"
+                     /db_xref="MIM:613288"
+                     /translation="MSAAPGLLHQELSCPLCLQLFDAPVTAECGHSFCRACLGRVAGE
+                     PAADGTVLCPCCQAPTRPQALSTNLQLARLVEGLAQVPQGHCEEHLDPLSIYCEQDRA
+                     LVCGVCASLGSHRGHRLLPAAEAHARLKTQLPQQKLQLQEACMRKEKSVAVLEHQLVE
+                     VEETVRQFRGAVGEQLGKMRVFLAALEGSLDREAERVRGEAGVALRRELGSLNSYLEQ
+                     LRQMEKVLEEVADKPQTEFLMKYCLVTSRLQKILAESPPPARLDIQLPIISDDFKFQV
+                     WRKMFRALMPALEELTFDPSSAHPSLVVSSSGRRVECSEQKAPPAGEDPRQFDKAVAV
+                     VAHQQLSEGEHYWEVDVGDKPRWALGVIAAEAPRRGRLHAVPSQGLWLLGLREGKILE
+                     AHVEAKEPRALRSPERRPTRIGLYLSFGDGVLSFYDASDADALVPLFAFHERLPRPVY
+                     PFFDVCWHDKGKNAQPLLLVGPEGAEA"
+     misc_feature    949..951
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000250|UniProtKB:A0JPQ4; propagated from
+                     UniProtKB/Swiss-Prot (Q6ZMU5.2); phosphorylation site"
+     exon            577..672
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            673..903
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            904..926
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            927..1045
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1046..8402
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      3356..3361
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="hexamer: AATAAA"
+     polyA_site      3376
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="major polyA site"
+     regulatory      4005..4010
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="hexamer: AATAAA"
+     polyA_site      4025
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+     regulatory      8381..8386
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+                     /note="hexamer: ATTAAA"
+     polyA_site      8402
+                     /gene="TRIM72"
+                     /gene_synonym="MG53"
+ORIGIN      
+        1 actgtgtgcc catcacgcgt ggtgtccact gccagctgcc cctgtgagtc cctgtccttg
+       61 cttggagcct gctgcttgtc tcagatcctt ggacccagcc ctgaccccag tccagctaag
+      121 ctcaaccctg accggtcctc cttcgagact ctttcagcct aagatctcca accagacctg
+      181 cccgccatgt cggctgcgcc cggcctcctg caccaggagc tgtcctgccc gctgtgcctg
+      241 cagctgttcg acgcgcccgt gacagccgag tgcggccaca gtttctgccg cgcctgccta
+      301 ggccgcgtgg ccggggagcc ggcggcggat ggcaccgttc tctgcccctg ctgccaggcc
+      361 cccacgcggc cgcaggcact cagcaccaac ctgcagctgg cgcgcctggt ggaggggctg
+      421 gcccaggtgc cgcagggcca ctgcgaggag cacctggacc cgctgagcat ctactgcgag
+      481 caggaccgcg cgctggtgtg cggagtgtgc gcctcactcg gctcgcaccg cggtcatcgc
+      541 ctcctgcctg ccgccgaggc ccacgcacgc ctcaagacac agctgccaca gcagaaactg
+      601 cagctgcagg aggcatgcat gcgcaaggag aagagtgtgg ctgtgctgga gcatcagctg
+      661 gtggaggtgg aggagacagt gcgtcagttc cggggggccg tgggggagca gctgggcaag
+      721 atgcgggtgt tcctggctgc actggagggc tccttggacc gcgaggcaga gcgtgtacgg
+      781 ggtgaggcag gggtcgcctt gcgccgggag ctggggagcc tgaactctta cctggagcag
+      841 ctgcggcaga tggagaaggt cctggaggag gtggcggaca agccgcagac tgagttcctc
+      901 atgaaatact gcctggtgac cagcaggctg cagaagatcc tggcagagtc tcccccaccc
+      961 gcccgtctgg acatccagct gccaattatc tcagatgact tcaaattcca ggtgtggagg
+     1021 aagatgttcc gggctctgat gccagcgctg gaggagctga cctttgaccc gagctctgcg
+     1081 cacccgagcc tggtggtgtc ttcctctggc cgccgcgtgg agtgctcgga gcagaaggcg
+     1141 ccgccggccg gggaggaccc gcgccagttc gacaaggcgg tggcggtggt ggcgcaccag
+     1201 cagctctccg agggcgagca ctactgggag gtggatgttg gcgacaagcc gcgctgggcg
+     1261 ctgggcgtga tcgcggccga ggccccccgc cgcgggcgcc tgcacgcggt gccctcgcag
+     1321 ggcctgtggc tgctggggct gcgcgagggc aagatcctgg aggcacacgt ggaggccaag
+     1381 gagccgcgcg ctctgcgcag ccccgagagg cggcccacgc gcattggcct ttacctgagc
+     1441 ttcggcgacg gcgtcctctc cttctacgat gccagcgacg ccgacgcgct cgtgccgctt
+     1501 tttgccttcc acgagcgcct gcccaggccc gtgtacccct tcttcgacgt gtgctggcac
+     1561 gacaagggca agaatgccca gccgctgctg ctcgtgggtc ccgaaggcgc cgaggcctga
+     1621 gccgccggac gggtagtgga ggggcgcggg ggcctgggtt gaagcttagg tctccttggt
+     1681 cgggtctgac gggagaaggg tggggagcgg gttgccaggg cccagggggc tgggaactgg
+     1741 gggatctccc agaatactga caagcgtggg gtaggactgg cttggtggct catgcctgta
+     1801 atcccagcac tttgggagac ggaggcgggt ggatcacctg aggtcaggag ttcaagacca
+     1861 gcctggccaa catggtgaaa ctcctctcta ctgaaaatac aaaaatgagc tgggcgcggt
+     1921 ggcatacgcc tgtaatccca gctagttggg aggctgaggc aggataattg cttgaaccca
+     1981 ggaggtggag gttgcagtga gcagacattg cggcactgca ctctagcctg ggtgacaaga
+     2041 gtgagactct gtctcaaaaa aaaaaaaaag tgtgggggtt ggcatggcct ggggactgct
+     2101 ggtgaggggt tggagtgacg ctggggacaa gacccagtgg ggtagggaga tctggagtca
+     2161 ggtcagtggg gaaatcagaa tttgggaacc aggaggcctg agaattccag gaagaaacta
+     2221 aggttgagcg agggagggac agggccaggt tgggggattg atgggaggag cttgagaacc
+     2281 tgtagataag gggctccttt tgcctcacac tcccctcctc cttaggcctt gggtcccccg
+     2341 ctccagattc accttaccca aaagccttct ccttagttct ccaccttagg catgcattaa
+     2401 aatcaccttt ttaaagccct tagccatgac ttgttaaagc atagggtgct aagtttctga
+     2461 tttagtaggt tggacaggtc aaaaatgctc atttcttttt tttatttctt tttttttttt
+     2521 tttttttttt ttttgagaca gagtcttgct ctgtcactca aggctagagt gcagtggtgc
+     2581 catctcggct cactgcaacc tctgcctcca gggttcaagc aattctcatg cctcagcctc
+     2641 ccaagtagct gggactacag acgcccgcca ccacacctgg ctatttattt ttatttttag
+     2701 taggggtttc actatgttgg ccaagctggt ctcgaactcc tgacctcaag tgattcaccc
+     2761 gccttggcct cccatagtgc tgggattaca gacatgagcc actgcacctg gctgaaaatg
+     2821 ctcatttttt tttttttaat ttagtttttg tagaaatggt gtctcgttac attgcccagg
+     2881 ctgatcttga actcttggcc tcaggtgatc ctcctgcctt ggccttccaa gtgctgggat
+     2941 tacaggtgtg agccaccacg ccctgccaaa aatgtgcatt tctagcaggt tcccaggtga
+     3001 cgctgctggc cacaggggct gacgctgcgg gaagccctga cctagtgcac aacccattgg
+     3061 gctcttcact gtcagtgtag aggcataggt ccaaaatatg tttccccagt caaaaacatg
+     3121 taaggtttgc accaggagtg gaaggaaaca aacaaacata aaccaaagca aagacactta
+     3181 agggctgggt actcatgcct gtaaacccaa cactttggga gtttgaggca ggaggctcat
+     3241 ttgaggccag gagtttgaga ccagcctggg gaacatagtg agaccctgtt gcaacaaaaa
+     3301 ccagaaaaac aacaaaaaga agacattgga aaatggctgg agctgattct aggtgaataa
+     3361 acaaccctcg acttaacttg ctttgcctct gggatatgtt tatcgagcgt cttgaacgtt
+     3421 gaggaagcca gccaagagaa agagcctgat gccaaggtca cactggtccc tgctgctcat
+     3481 ggggaagaga aggcccccaa ctagatgtcc cagaactggc cgctccccac ttacttgctg
+     3541 gttcacacct tctttggttt tagcgcacag ggcatttctt gggctctgga gtaaccactg
+     3601 aggccagagt gagagtccct cttccctgga gggagaggcc tttggggatc cagacaggct
+     3661 tctctcctga gggaagacgc tggcctgggg tcactcattt tcacggggag ggtgtgctgg
+     3721 cgggatgggt ggaagggcct ggggccccgg cagcccattg cggaggtttt ctcgggagat
+     3781 ggtgggtatg ggactaaggg tgaaagggaa gttgtgagtt gggtaagaaa ggcctgagga
+     3841 tctggcaggg gaaggcggca cacctgggtg tgtctcccag aggaaggcct gtggagccct
+     3901 ggcttcagga gacagaagag aggattaacg gtagaagctc tttcatgtta gaaaataaaa
+     3961 caatatagct aagggattat ttggttgtaa aatccaacac cattaataaa actgttatat
+     4021 tctgactcct tcctcattaa atccacatga aaagacatgt gacctactgc aaggcctcct
+     4081 aattgccctc cagcctttaa tcctgacttg gtaatgtttc caaaaatgca aatgtggtca
+     4141 cgggactcag ttgctcaaaa ctttcaacaa ctccctcttg cctacaggat aaagccccca
+     4201 gtctttggct tagcatttga gctgttctgc catttttttt gttggttggt ttgtttgttt
+     4261 tgtttgagac agagtctcgc tctgtcgccc aggctggagt gcagtggtgt gatcaccgta
+     4321 acctccgcct cctaggttca agggattctc ctgcctcagc ctcccgagta gctgggatta
+     4381 caggtgcccg ccaggctggt ctcgaactcc tgacctcagg tgatccaccc attttggcct
+     4441 cccaaagtgc tgggattaca ggctggcctt ccagcttcat ctgtttttag ttaaaaaaca
+     4501 attttttttt ttgagacaag gtcttgctct gtcgcacagg ctggagtgca atggtgtgat
+     4561 tgtggctcac tgcagccttg acctcctggg ctcacatgat cctcccactc cagcctcctg
+     4621 agtagatagg atggcaggca cccatcacca tgcctgacta ttttttattt tttgtatttt
+     4681 ggtagagatg aggtctcact atgttgctca tgctggtctc gagctcctgg cctcaagcga
+     4741 tcctcccatc ttggcttccc aaagtgttgg gattacaggt gtgagccact gagcccagcc
+     4801 cagcttcatc ttttatttta ttattatttt ttgagatgga gtctcaccgt gtcacccagg
+     4861 ttagagtgca gtggtgtgat cttggctcac tgcaacctct gcctcccagg ttcaagtgat
+     4921 cctcctgcct cagcctcccg agtagctggg actataggca ggtgacacta cgcctagctg
+     4981 atttttgtat ttctagtggg gacaggggct tcactatgtt ggccagcctg gtctcgaact
+     5041 cctgacctca ggggatcccc caactcggcc tcccaaagta ctaggattac aggcttgaac
+     5101 cgccgcgccc agccccagct tcatcttaaa aagaaaagtt ctctgtttta atatctaaca
+     5161 gggcaaatat tgaaagataa aaccacataa caaaagctct ttgggatcct agtgttgggg
+     5221 aaaggctgct gtccattgac tgtcactgaa ctctctgtca ttgctcaggc taaggactgg
+     5281 ccacagtgag ggagggacct gtggtctcct gtgttgctcc tcaccctgta gactgtgggc
+     5341 tgtgggctgt gtccagcctc accttggatc accgccctgt gcatgtctac actctggcta
+     5401 tgctgaactg aactgctggg gtctctgcac ctcctttttt tttttttttt ttttgagatg
+     5461 cagtcttgct ctgtcgccca ggctggagtg caatggtgct atctcagctc actgcaacct
+     5521 ctgcctccca ggttcaagtg attctcctgc ctcagcctcc gcagtagcta ggattacagg
+     5581 cacccaccac cacgccaggt tagttttttc atttttattt gtatttttag tagaggcggg
+     5641 gttttgccat gttggccagg ctgatctcga actcctgacc tcaaatgatc tgcccgcctc
+     5701 agcctcccaa agtgctggga ttacaggcat gagctgtcgg gcctggcccc tgcacttctt
+     5761 ttttaggaat gtcagttccc tcccacttat ccttcatggc tctcccaaaa caccaccatt
+     5821 tcctgtcctc tcttgacctt ctaggcctcc aggaagaatc agttactctc ctctctggat
+     5881 cgcccagcag ctcctccacc atgtgtagcc cacggcattg aattgtctac acacaggcca
+     5941 tggtgtctgg agggatggtg gtatctgaga cccaaagcct ccttctgagg aaatgggtac
+     6001 tctgagaagc agatgccaag ataggattaa atgggcagag attttaggag ggaagatgcc
+     6061 catgtgaggg aagatgggga gggccatcag accgtgtcgc aagtctgctg ttcgtgtggg
+     6121 agggagggag ggaaggctct tgtggcgtct ccggcagcca gagccaccgt ccaaacactc
+     6181 ctgtgccttc cgggacccgg gctggcttta gtctccctgc agagctgagt aatgtatgct
+     6241 gccttttgtt ggaattatat caggaaactt tctttcgaag ctgccacagg ttctttctgc
+     6301 gtatagttgc cccagcttga gctgcatgca ttgaaggaaa tggcccatgg ctgactgagt
+     6361 gaggtgggct ttgtgggaaa agctgcgtaa tccaggtggt ccttgtcggg tggggctgcc
+     6421 tgacccaggc agggtctccc tggggatgta ggaaggtgaa atgtgaacag agaaaggagt
+     6481 tcctccagca catgtgttct aaagcaccag cgtcccctcc gtgagtccct cctctccacg
+     6541 ggaacgctgg aaacccccag aaactggctg ccaagacatt tcctgtgttt cctgacatct
+     6601 ttaggtagca taatagcaaa cttgaacctg ccaaggccat gataaaactg caagcaagaa
+     6661 catttatcgt ggccaggtgc agtggctcac gcctgtaatc ccagcacttt tggaggttga
+     6721 ggcgggtgaa tcacctgagg tcaggagttc gagaccagtc tggtcaacat ggtgaaaccc
+     6781 catctttact aaaaatacaa aaattagcca ggcatggtgg tgcatgcctg caatcccagc
+     6841 tactcaggag gctgaggcag gagaatcact tgaacctggg aggcagaggt tccgatgagc
+     6901 tgagatcggg ccactgcatt ccagtctggg tgagagagtt aaaacaggaa ttaaaagaaa
+     6961 ttaaagaatg tgtaagcaaa aactcagttg tatgtaagaa aaccccattc accctgagga
+     7021 agagaaagag ctaaagtcct ttaaaaatta actgcctgtt tttctgtgga tagtgagcct
+     7081 tatctctctc cctttcccag gcattgtgaa gaccctgttt ctctagctgt gcagctgcaa
+     7141 ggtcactagg cagataaact caagtcataa aacatgtttt tccttgaaaa gtaaaaaatg
+     7201 atgtaatgca tgtctcaact gaataactgt ctttgtttct tgcttctgta atatgcttcc
+     7261 ccctgcacag atctccccct gccccacaaa atgcttaaaa ggtaaccgga gccgggcgtg
+     7321 gtggctcacg cctgtaatcc cagcactttg ggaggctgag gcaggcggat catgaggtca
+     7381 ggagatcgag accgtcctgg ttaacatgtt gaaaccccgt ctctactaaa aatacaaaaa
+     7441 attagccggg cgtggtggca ggcacctgta gtcccagcta cttgggaggc tgaggcagga
+     7501 gaatggcctg aacccgggag gcggagcttg cagtgagccg agatggcgcc actacactcc
+     7561 agcctgggtg acagagcgag actccgcctc aaaaaaaaaa aaaaaaaaag gtaaccggac
+     7621 tctttgttca gggctcagtc tttttggatg ttaatctgac cgggccagtg cacctaacta
+     7681 aataataaat aataagtatc ctcctcaacc tcttggtctc tctgattcct aaattatccc
+     7741 actgcagaat gagactctgt ctcaaaggaa aaaaaagaaa atttattgag accttattat
+     7801 gcgtcaatag ctctctattc agaatctcac tgatcttcgc aaccctggat ctcacaacaa
+     7861 cgagagcccc actaggttgc ctcttttgtt ttgttttgtt ttttttttga gatggagtct
+     7921 cactgtctcc caggctggag tgcagtggcg tgatctcggc tcactgcaac ctccgccctc
+     7981 tgggttcacg ccattctcct gcctcagcct cccaagtagc tgggactaca ggcgcccgcc
+     8041 accatgcctg gttaattttt ttgtattttt agtagagacg gggtttcacc atgtttgcca
+     8101 ggatggtctc catctcctga cctcgtgatc cgcccgcctc ggcctcccaa agtgctggga
+     8161 ttacaggcgt gagccaccgc gtccggctta ggttgcctct tatactgggt tcacgcatcc
+     8221 cctgggtgca tgacagtctg accacaaagg accccggtcc acagaagcat gatgcatctt
+     8281 ggagtatcga ctttatgcca atattcttct tcttgatact ggtggtggtg agaaagttgg
+     8341 gtaatttaac caaaagtaaa aatcaagatg tcacgttccc attaaaacaa acatagagta
+     8401 ca
+//
+

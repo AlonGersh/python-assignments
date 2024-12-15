@@ -1,0 +1,57 @@
+LOCUS       XP_070100664             233 aa            linear   MAM 11-DEC-2024
+DEFINITION  myoD family inhibitor isoform X4 [Equus caballus].
+ACCESSION   XP_070100664
+VERSION     XP_070100664.1
+DBLINK      BioProject: PRJNA1194615
+DBSOURCE    REFSEQ: accession XM_070244563.1
+KEYWORDS    RefSeq.
+SOURCE      Equus caballus (horse)
+  ORGANISM  Equus caballus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Equidae; Equus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_091703) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI RefSeq
+            Annotation Status           :: Full annotation
+            Annotation Name             :: GCF_041296265.1-RS_2024_12
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 10.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon;
+                                           cmsearch; tRNAscan-SE
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            Annotation Date             :: 12/06/2024
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..233
+                     /organism="Equus caballus"
+                     /isolate="H_3958"
+                     /db_xref="taxon:9796"
+                     /chromosome="20"
+                     /sex="female"
+                     /tissue_type="Whole blood in anticoagulant"
+                     /dev_stage="adult"
+                     /geo_loc_name="USA: Ithaca, New York"
+                     /collection_date="2018-03-01"
+                     /breed="thoroughbred"
+     Protein         1..233
+                     /product="myoD family inhibitor isoform X4"
+                     /calculated_mol_wt=23594
+     CDS             1..233
+                     /gene="MDFI"
+                     /coded_by="XM_070244563.1:23..724"
+                     /db_xref="GeneID:100066350"
+                     /db_xref="VGNC:VGNC:20053"
+ORIGIN      
+        1 mgersesrad vtaqtpslpp glevvtgsth paeaaleegs leeaaplmpq gngpgapqal
+       61 dstdldvpte avtrqpqgnp lgctplvang sghsselgga rqagngalgg pkthrklqth
+      121 pslasqgskk skastksaas qiplqaqedc cvhcilsclf cefltlcniv ldcatcgscs
+      181 sedsclcccc cgsgecadcd lpcdldcgil daccesadcl eicmeccglc fss
+//
+

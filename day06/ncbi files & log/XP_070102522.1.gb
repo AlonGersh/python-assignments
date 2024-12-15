@@ -1,0 +1,63 @@
+LOCUS       XP_070102522             502 aa            linear   MAM 11-DEC-2024
+DEFINITION  paired box protein Pax-7 isoform X1 [Equus caballus].
+ACCESSION   XP_070102522
+VERSION     XP_070102522.1
+DBLINK      BioProject: PRJNA1194615
+DBSOURCE    REFSEQ: accession XM_070246421.1
+KEYWORDS    RefSeq.
+SOURCE      Equus caballus (horse)
+  ORGANISM  Equus caballus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Equidae; Equus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_091685) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI RefSeq
+            Annotation Status           :: Full annotation
+            Annotation Name             :: GCF_041296265.1-RS_2024_12
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 10.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon;
+                                           cmsearch; tRNAscan-SE
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            Annotation Date             :: 12/06/2024
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..502
+                     /organism="Equus caballus"
+                     /isolate="H_3958"
+                     /db_xref="taxon:9796"
+                     /chromosome="2"
+                     /sex="female"
+                     /tissue_type="Whole blood in anticoagulant"
+                     /dev_stage="adult"
+                     /geo_loc_name="USA: Ithaca, New York"
+                     /collection_date="2018-03-01"
+                     /breed="thoroughbred"
+     Protein         1..502
+                     /product="paired box protein Pax-7 isoform X1"
+                     /calculated_mol_wt=54676
+     CDS             1..502
+                     /gene="PAX7"
+                     /gene_synonym="HUP1; PAX7B; RMS2"
+                     /coded_by="XM_070246421.1:77..1585"
+                     /db_xref="GeneID:102149771"
+                     /db_xref="VGNC:VGNC:50738"
+ORIGIN      
+        1 maalpgtvpr mmrpapgqny prtgfplevs tplgqgrvnq lggvfingrp lpnhirhkiv
+       61 emahhgirpc visrqlrvsh gcvskilcry qetgsirpga iggskprvat pdvekkieey
+      121 krenpgmfsw eirdrllkdg hcdrstvpsv ssisrvlrik fgkkeeedea dkkeddgekk
+      181 akhsidgilg dkgnrldegs dvesepdlpl krkqrrsrtt ftaeqleele kaferthypd
+      241 iytreelaqr tkltearvqv wfsnrrarwr kqaganqlaa fnhllpggfp ptgmptlppy
+      301 qlpdstyptt tisqdggstv hrpqplppst mhqgglaaaa aaadsssayg arhsfssysd
+      361 sfmnpaapan hmnpvsngls pqvmsilsnp savppqpqad fsisplhggl dsatsisasc
+      421 sqradsikpg dslptsqsyc pptysatgys vdpvagyqyg qygqtavdyl aknvslstqr
+      481 rmklgehsav lgllpvetgq ay
+//
+

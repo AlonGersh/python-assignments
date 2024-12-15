@@ -1,0 +1,60 @@
+LOCUS       NC_091713           38719181 bp    DNA     linear   CON 11-DEC-2024
+DEFINITION  Equus caballus isolate H_3958 breed thoroughbred chromosome 30,
+            TB-T2T, whole genome shotgun sequence.
+ACCESSION   NC_091713
+VERSION     NC_091713.1
+DBLINK      BioProject: PRJNA1194615
+            BioSample: SAMN42823849
+            Assembly: GCF_041296265.1
+KEYWORDS    WGS; RefSeq.
+SOURCE      Equus caballus (horse)
+  ORGANISM  Equus caballus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Equidae; Equus.
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM084060.1.
+            Assembly name: TB-T2T
+            The genomic sequence for this RefSeq record is from the
+            whole-genome assembly released by the University of Kentucky on
+            2024/08/16. The original whole-genome shotgun project has the
+            accession JBFNWK000000000.1.
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Provider      :: University of Kentucky
+            Assembly Method        :: Verkko v. 2
+            Diploid                :: Maternal Haplotype
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 185x
+            Sequencing Technology  :: Illumina; Oxford Nanopore PromethION;
+                                      PacBio Sequel
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI RefSeq
+            Annotation Status           :: Full annotation
+            Annotation Name             :: GCF_041296265.1-RS_2024_12
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 10.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon;
+                                           cmsearch; tRNAscan-SE
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            Annotation Date             :: 12/06/2024
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..38719181
+                     /organism="Equus caballus"
+                     /mol_type="genomic DNA"
+                     /isolate="H_3958"
+                     /db_xref="taxon:9796"
+                     /chromosome="30"
+                     /sex="female"
+                     /tissue_type="Whole blood in anticoagulant"
+                     /dev_stage="adult"
+                     /geo_loc_name="USA: Ithaca, New York"
+                     /collection_date="2018-03-01"
+                     /breed="thoroughbred"
+CONTIG      join(NW_027221803.1:1..38719181)
+//
+
