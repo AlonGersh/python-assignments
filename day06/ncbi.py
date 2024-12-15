@@ -27,7 +27,6 @@ def download_ncbi_record(database, doc_id, output_dir):
 
 # Log metadata to a CSV file
 def log_to_csv(log_file, date, term, database, max_records, total_found):
-    """Log metadata to a CSV file."""
     file_exists = os.path.isfile(log_file)
     with open(log_file, mode='a', newline='') as file:
         writer = csv.writer(file)
