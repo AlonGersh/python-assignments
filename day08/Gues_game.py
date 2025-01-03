@@ -42,7 +42,9 @@ class GuessingGame:
             return
 
         if guess.lower() == 'x':
-            self.root.quit()
+            messagebox.showinfo("Goodbye", "Goodbye")
+            self.root.after(100, self.root.quit)
+            return
         elif guess.lower() == 'n':
             self.new_game()
             return
