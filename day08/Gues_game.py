@@ -10,15 +10,15 @@ class GuessingGame:
         self.random_number = random.randint(1, 20)
         self.attempts = 0
 
-        # Title Label
+        # Title 
         self.title_label = tk.Label(root, text="Welcome to the Python Guessing Game!", font=("Arial", 16))
         self.title_label.pack(pady=10)
 
-        # Instructions Label
+        # Instructions 
         self.instructions_label = tk.Label(root, text="Guess the number between 1 and 20", font=("Arial", 12))
         self.instructions_label.pack(pady=5)
 
-        # Entry for user input
+        # User input
         self.entry = tk.Entry(root, font=("Arial", 14))
         self.entry.pack(pady=5)
 
