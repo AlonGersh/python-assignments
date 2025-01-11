@@ -1,5 +1,3 @@
-# Sequence Analysis Tool
-
 This Python script analyzes biological sequence data from FASTA files. The program provides two types of analysis:
 
 1. **Find the longest repeated sub-sequence** in the given sequence.
