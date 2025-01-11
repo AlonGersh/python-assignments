@@ -2,9 +2,7 @@ import argparse
 from collections import defaultdict
 
 def parse_fasta(file_path):
-    """
-    Parse a Fasta file and return a dictionary with sequence IDs as keys and sequences as values.
-    """
+    
     sequences = {}
     with open(file_path, 'r') as file:
         current_seq_id = None
@@ -25,13 +23,12 @@ def parse_fasta(file_path):
     return sequences
 
 def find_longest_duplicate(sequence):
-    """
-    Find the longest repeated sub-sequence in the given sequence.
-    """
+    
+    # Find the longest repeated sub-sequence.
+    
     n = len(sequence)
     longest_subseq = ""
     
-    # Use a dictionary to store substrings and their positions
     substrings = defaultdict(list)
     
     for length in range(1, n // 2 + 1):
@@ -47,16 +44,16 @@ def find_longest_duplicate(sequence):
     return longest_subseq
 
 def calculate_at_content(sequence):
-    """
-    Calculate the AT content of a sequence.
-    """
+    
+    # AT content calculation.
+    
     at_count = sum(1 for base in sequence if base in "AT")
     return (at_count / len(sequence)) * 100
 
 def analyze_file(file_path, find_duplicates=False, calculate_at=False):
-    """
-    Perform sequence analysis on a file and print results based on user options.
-    """
+    
+    # Sequence analysis on a file and print results.
+    
     sequences = parse_fasta(file_path)
     
     for seq_id, sequence in sequences.items():
