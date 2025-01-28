@@ -25,11 +25,11 @@ def save_recipes():
     with open(RECIPE_FILE, "w") as file:
         json.dump(recipes, file, indent=4)
 
-# Function to add copy-paste functionality 
+# Function to add copy-paste functionality
 def add_copy_paste_shortcuts(widget):
     widget.bind("<Control-c>", lambda e: widget.event_generate("<<Copy>>"))
     widget.bind("<Control-x>", lambda e: widget.event_generate("<<Cut>>"))
-    widget.bind("<Control-v>", lambda e: None)  
+    widget.bind("<Control-v>", lambda e: widget.event_generate("<<Paste>>"))
 
 # Main Application
 class RecipeOrganizerApp:
@@ -41,7 +41,7 @@ class RecipeOrganizerApp:
         self.category_frame = ttk.Frame(root)
         self.category_frame.pack(side=tk.TOP, fill=tk.X, pady=10)
 
-        self.categories = ["All recipes", "Desserts", "Bread", "Soups", "Salads", "Pasta", "Stews"]
+        self.categories = ["Desserts", "Bread", "Soups", "Salads", "Pasta", "Stews"]
         self.category_buttons = {}
         for category in self.categories:
             button = ttk.Button(self.category_frame, text=category, command=lambda c=category: self.filter_recipes(c))
@@ -76,11 +76,8 @@ class RecipeOrganizerApp:
         self.delete_button = ttk.Button(self.buttons_frame, text="Delete Recipe", command=self.delete_recipe)
         self.delete_button.pack(pady=10)
 
-        self.export_button = ttk.Button(self.buttons_frame, text="Export Recipe", command=self.export_recipe)
-        self.export_button.pack(pady=10)
-
         # Initialize filtered category to show all recipes
-        self.filtered_category = "All recipes"
+        self.filtered_category = None
         self.update_recipe_list()
 
     def filter_recipes(self, category):
@@ -89,10 +86,7 @@ class RecipeOrganizerApp:
 
     def update_recipe_list(self):
         self.recipe_listbox.delete(0, tk.END)
-        if self.filtered_category == "All recipes":
-            filtered_recipes = recipes
-        else:
-            filtered_recipes = [r for r in recipes if r["category"] == self.filtered_category]
+        filtered_recipes = recipes if self.filtered_category is None else [r for r in recipes if r["category"] == self.filtered_category]
         for recipe in filtered_recipes:
             self.recipe_listbox.insert(tk.END, recipe["name"])
 
@@ -102,71 +96,26 @@ class RecipeOrganizerApp:
     def view_recipe(self, event=None):
         selected_index = self.recipe_listbox.curselection()
         if selected_index:
-            if self.filtered_category == "All recipes":
-                recipe_index = selected_index[0]
-            else:
-                filtered_recipes = [r for r in recipes if r["category"] == self.filtered_category]
-                recipe_index = recipes.index(filtered_recipes[selected_index[0]])
-            ViewRecipeWindow(self, recipe_index)
+            ViewRecipeWindow(self, selected_index[0])
         else:
             messagebox.showinfo("Info", "Please select a recipe to view")
 
     def edit_recipe(self):
         selected_index = self.recipe_listbox.curselection()
         if selected_index:
-            if self.filtered_category == "All recipes":
-                recipe_index = selected_index[0]
-            else:
-                filtered_recipes = [r for r in recipes if r["category"] == self.filtered_category]
-                recipe_index = recipes.index(filtered_recipes[selected_index[0]])
-            EditRecipeWindow(self, recipe_index)
+            EditRecipeWindow(self, selected_index[0])
         else:
             messagebox.showinfo("Info", "Please select a recipe to edit")
 
     def delete_recipe(self):
         selected_index = self.recipe_listbox.curselection()
         if selected_index:
-            if self.filtered_category == "All recipes":
-                recipe_index = selected_index[0]
-            else:
-                filtered_recipes = [r for r in recipes if r["category"] == self.filtered_category]
-                recipe_index = recipes.index(filtered_recipes[selected_index[0]])
-            del recipes[recipe_index]
+            del recipes[selected_index[0]]
             save_recipes()
             self.update_recipe_list()
             messagebox.showinfo("Success", "Recipe deleted successfully")
         else:
             messagebox.showinfo("Info", "Please select a recipe to delete")
-
-    def export_recipe(self):
-        selected_index = self.recipe_listbox.curselection()
-        if selected_index:
-             # When "All recipes" is selected
-            if self.filtered_category == "All recipes":
-                recipe_index = selected_index[0]
-            else:
-                filtered_recipes = [r for r in recipes if r["category"] == self.filtered_category]
-                recipe_index = recipes.index(filtered_recipes[selected_index[0]])
-
-        # Proceed with export
-        file_path = filedialog.asksaveasfilename(defaultextension=".txt",
-                                                 filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
-        if file_path:
-            recipe = recipes[recipe_index]
-            with open(file_path, "w", encoding="utf-8") as file:
-                file.write(f"Recipe: {recipe['name']}\n\n")
-                file.write(f"Category: {recipe['category']}\n\n")
-                file.write(f"Instructions:\n{recipe['instructions']}\n\n")
-                file.write(f"Ingredients:\n{recipe['ingredients']}\n\n")
-                file.write(f"Video Link: {recipe['video_link']}\n\n")
-                file.write(f"Image: {recipe['image']}\n\n")
-                file.write("Comments:\n")
-                for comment in recipe['comments']:
-                    file.write(f"- {comment}\n")
-            messagebox.showinfo("Success", f"Recipe exported to {file_path}")
-        else:
-            messagebox.showinfo("Info", "Please select a recipe to export")
-
 
 class AddRecipeWindow:
     def __init__(self, app):
@@ -180,34 +129,34 @@ class AddRecipeWindow:
         add_copy_paste_shortcuts(self.name_entry)
 
         ttk.Label(self.window, text="Category:").grid(row=1, column=0, padx=10, pady=5)
-        self.category_combobox = ttk.Combobox(self.window, values=self.app.categories, state="read only", width=28)
+        self.category_combobox = ttk.Combobox(self.window, values=self.app.categories, state="readonly", width=28)
         self.category_combobox.grid(row=1, column=1, padx=10, pady=5)
         self.category_combobox.set(self.app.categories[0])
 
-        ttk.Label(self.window, text="Ingredients:").grid(row=2, column=0, padx=10, pady=5)
-        self.ingredients_text = tk.Text(self.window, width=30, height=5, wrap=tk.WORD)
-        self.ingredients_text.grid(row=2, column=1, padx=10, pady=5)
-        add_copy_paste_shortcuts(self.ingredients_text)
-
-        ttk.Label(self.window, text="Instructions:").grid(row=3, column=0, padx=10, pady=5)
+        ttk.Label(self.window, text="Instructions:").grid(row=2, column=0, padx=10, pady=5)
         self.instructions_text = tk.Text(self.window, width=30, height=10, wrap=tk.WORD)
         self.instructions_text.tag_configure("right", justify="right")
-        self.instructions_text.grid(row=3, column=1, padx=10, pady=5)
+        self.instructions_text.grid(row=2, column=1, padx=10, pady=5)
         add_copy_paste_shortcuts(self.instructions_text)
 
-        ttk.Label(self.window, text="Video Link:").grid(row=4, column=0, padx=10, pady=5)
+        ttk.Label(self.window, text="Ingredients:").grid(row=3, column=0, padx=10, pady=5)
+        self.ingredients_text = tk.Text(self.window, width=30, height=5, wrap=tk.WORD)
+        self.ingredients_text.grid(row=3, column=1, padx=10, pady=5)
+        add_copy_paste_shortcuts(self.ingredients_text)
+
+        ttk.Label(self.window, text="Video Link (Optional):").grid(row=4, column=0, padx=10, pady=5)
         self.video_entry = ttk.Entry(self.window, width=30, justify="right")
         self.video_entry.grid(row=4, column=1, padx=10, pady=5)
         add_copy_paste_shortcuts(self.video_entry)
 
-        ttk.Label(self.window, text="Image:").grid(row=5, column=0, padx=10, pady=5)
+        ttk.Label(self.window, text="Image (Optional):").grid(row=5, column=0, padx=10, pady=5)
         self.image_path = tk.StringVar()
         self.image_entry = ttk.Entry(self.window, textvariable=self.image_path, width=30, justify="right")
         self.image_entry.grid(row=5, column=1, padx=10, pady=5)
         ttk.Label(self.window, text="(File path or URL)").grid(row=5, column=2, padx=5, pady=5)
 
         # Updated Comments Section
-        ttk.Label(self.window, text="Comments:").grid(row=6, column=0, padx=10, pady=5)
+        ttk.Label(self.window, text="Comments (Optional):").grid(row=6, column=0, padx=10, pady=5)
         self.comments_text = tk.Text(self.window, width=30, height=5, wrap=tk.WORD)
         self.comments_text.grid(row=6, column=1, padx=10, pady=5)
         add_copy_paste_shortcuts(self.comments_text)
@@ -267,17 +216,17 @@ class EditRecipeWindow:
         self.category_combobox.grid(row=1, column=1, padx=10, pady=5)
         self.category_combobox.set(self.recipe["category"])
 
-        ttk.Label(self.window, text="Ingredients:").grid(row=2, column=0, padx=10, pady=5)
-        self.ingredients_text = tk.Text(self.window, width=30, height=5, wrap=tk.WORD)
-        self.ingredients_text.grid(row=2, column=1, padx=10, pady=5)
-        self.ingredients_text.insert(tk.END, self.recipe["ingredients"])
-        add_copy_paste_shortcuts(self.ingredients_text)
-
-        ttk.Label(self.window, text="Instructions:").grid(row=3, column=0, padx=10, pady=5)
+        ttk.Label(self.window, text="Instructions:").grid(row=2, column=0, padx=10, pady=5)
         self.instructions_text = tk.Text(self.window, width=30, height=10, wrap=tk.WORD)
-        self.instructions_text.grid(row=3, column=1, padx=10, pady=5)
+        self.instructions_text.grid(row=2, column=1, padx=10, pady=5)
         self.instructions_text.insert(tk.END, self.recipe["instructions"])
         add_copy_paste_shortcuts(self.instructions_text)
+
+        ttk.Label(self.window, text="Ingredients:").grid(row=3, column=0, padx=10, pady=5)
+        self.ingredients_text = tk.Text(self.window, width=30, height=5, wrap=tk.WORD)
+        self.ingredients_text.grid(row=3, column=1, padx=10, pady=5)
+        self.ingredients_text.insert(tk.END, self.recipe["ingredients"])
+        add_copy_paste_shortcuts(self.ingredients_text)
 
         ttk.Label(self.window, text="Video Link (Optional):").grid(row=4, column=0, padx=10, pady=5)
         self.video_entry = ttk.Entry(self.window, width=30)
@@ -334,100 +283,41 @@ class EditRecipeWindow:
         self.window.destroy()
         messagebox.showinfo("Success", "Recipe updated successfully.")
 
+
 class ViewRecipeWindow:
     def __init__(self, app, recipe_index):
         self.app = app
         self.recipe = recipes[recipe_index]
-        self.recipe_index = recipe_index
 
         self.window = tk.Toplevel()
         self.window.title(self.recipe["name"])
 
-        # Create a canvas with scrollbar
-        self.canvas = tk.Canvas(self.window)
-        self.scrollbar = ttk.Scrollbar(self.window, orient="vertical", command=self.canvas.yview)
-        self.scrollable_frame = ttk.Frame(self.canvas)
+        ttk.Label(self.window, text="Category:").grid(row=0, column=0, padx=10, pady=5, sticky="e")
+        ttk.Label(self.window, text=self.recipe["category"]).grid(row=0, column=1, padx=10, pady=5, sticky="w")
 
-        self.scrollable_frame.bind(
-            "<Configure>",
-            lambda e: self.canvas.configure(
-                scrollregion=self.canvas.bbox("all")
-            )
-        )
+        ttk.Label(self.window, text="Instructions:").grid(row=1, column=0, padx=10, pady=5, sticky="e")
+        ttk.Label(self.window, text=self.recipe["instructions"], wraplength=400).grid(row=1, column=1, padx=10, pady=5, sticky="w")
 
-        self.canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
-        self.canvas.configure(yscrollcommand=self.scrollbar.set)
+        ttk.Label(self.window, text="Ingredients:").grid(row=2, column=0, padx=10, pady=5, sticky="e")
+        ttk.Label(self.window, text=self.recipe["ingredients"], wraplength=400).grid(row=2, column=1, padx=10, pady=5, sticky="w")
 
-        # Add recipe content to the scrollable frame
-        ttk.Label(self.scrollable_frame, text="Category:").grid(row=0, column=0, padx=10, pady=5, sticky="e")
-        ttk.Label(self.scrollable_frame, text=self.recipe["category"]).grid(row=0, column=1, padx=10, pady=5, sticky="w")
-
-        # Ingredients 
-        ttk.Label(self.scrollable_frame, text="Ingredients:").grid(row=1, column=0, padx=10, pady=5, sticky="ne")
-        ingredients_label = ttk.Label(self.scrollable_frame, text=self.recipe["ingredients"], wraplength=400)
-        ingredients_label.grid(row=1, column=1, padx=10, pady=5, sticky="w")
-
-        # Instructions 
-        ttk.Label(self.scrollable_frame, text="Instructions:").grid(row=2, column=0, padx=10, pady=5, sticky="ne")
-        instructions_label = ttk.Label(self.scrollable_frame, text=self.recipe["instructions"], wraplength=400)
-        instructions_label.grid(row=2, column=1, padx=10, pady=5, sticky="w")
-
-        ttk.Label(self.scrollable_frame, text="Video Link:").grid(row=3, column=0, padx=10, pady=5, sticky="e")
+        # Video Link - Make it clickable
+        ttk.Label(self.window, text="Video Link:").grid(row=3, column=0, padx=10, pady=5, sticky="e")
         video_link = self.recipe["video_link"]
         if video_link:
-            clickable_link = tk.Label(self.scrollable_frame, text=video_link, fg="blue", cursor="hand2")
+            clickable_link = tk.Label(self.window, text=video_link, fg="blue", cursor="hand2")
             clickable_link.grid(row=3, column=1, padx=10, pady=5, sticky="w")
             clickable_link.bind("<Button-1>", lambda e, url=video_link: webbrowser.open(url))
 
-        ttk.Label(self.scrollable_frame, text="Image:").grid(row=4, column=0, padx=10, pady=5, sticky="e")
-        image_path = self.recipe["image"]
-        if image_path:
-            try:
-                if image_path.startswith(('http://', 'https://')):
-                    response = requests.get(image_path)
-                    img = Image.open(BytesIO(response.content))
-                else:
-                    img = Image.open(image_path)
-                
-                img.thumbnail((300, 300))
-                photo = ImageTk.PhotoImage(img)
-                img_label = ttk.Label(self.scrollable_frame, image=photo)
-                img_label.image = photo
-                img_label.grid(row=4, column=1, padx=10, pady=5, sticky="w")
-            except Exception as e:
-                ttk.Label(self.scrollable_frame, text=f"Error loading image: {str(e)}").grid(row=4, column=1, padx=10, pady=5, sticky="w")
-        else:
-            ttk.Label(self.scrollable_frame, text="No image available").grid(row=4, column=1, padx=10, pady=5, sticky="w")
+        ttk.Label(self.window, text="Image:").grid(row=4, column=0, padx=10, pady=5, sticky="e")
+        ttk.Label(self.window, text=self.recipe["image"]).grid(row=4, column=1, padx=10, pady=5, sticky="w")
 
-        # Comments
-        ttk.Label(self.scrollable_frame, text="Comments:").grid(row=5, column=0, padx=10, pady=5, sticky="ne")
+        # Comments Section
+        ttk.Label(self.window, text="Comments:").grid(row=5, column=0, padx=10, pady=5, sticky="e")
         comments_text = "\n".join(self.recipe["comments"])
-        comments_label = ttk.Label(self.scrollable_frame, text=comments_text, wraplength=400)
+        comments_label = ttk.Label(self.window, text=comments_text, wraplength=400)
         comments_label.grid(row=5, column=1, padx=10, pady=5, sticky="w")
-
-        # Pack the canvas and scrollbar
-        self.canvas.pack(side="left", fill="both", expand=True)
-        self.scrollbar.pack(side="right", fill="y")
-
-        # Export txt file button
-        export_button = ttk.Button(self.window, text="Export txt file", command=self.export_recipe)
-        export_button.grid(row=6, column=1, pady=10)
-
-    def export_recipe(self):
-        file_path = filedialog.asksaveasfilename(defaultextension=".txt",
-                                                 filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
-        if file_path:
-            with open(file_path, "w", encoding="utf-8") as file:
-                file.write(f"Recipe: {self.recipe['name']}\n\n")
-                file.write(f"Category: {self.recipe['category']}\n\n")
-                file.write(f"Instructions:\n{self.recipe['instructions']}\n\n")
-                file.write(f"Ingredients:\n{self.recipe['ingredients']}\n\n")
-                file.write(f"Video Link: {self.recipe['video_link']}\n\n")
-                file.write(f"Image: {self.recipe['image']}\n\n")
-                file.write("Comments:\n")
-                for comment in self.recipe['comments']:
-                    file.write(f"- {comment}\n")
-            messagebox.showinfo("Success", f"Recipe exported to {file_path}")
+        comments_label.config(height=5)  
 
 if __name__ == "__main__":
     root = tk.Tk()
